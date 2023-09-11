@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <title>wba_5.2</title>
+    </head>
+    <body>
+        <form action = "http://127.0.0.1:3000/submit" method = "POST">
+            <div>
+                <table id="weinTable">
+                    <tr>
+                        <th>Flaschen</th>
+                        <th>Weinname</th>
+                        <th>Einzelpreis</th>
+                        <th>Preis</th>
+                    </tr>
+                    <tr>
+                        <td><input type="radio"  id ="in1"></td>
+                        <td>Versand DHL (bis 12 Flaschen)</td>
+                        <td>10.00</td>
+                        <td><input type="text" id ="out1" value="0.00" readonly></td>
+                    </tr>
+                    <tr>
+                        <td><input type="radio"  id ="in2"></td>
+                        <td>Versand Spedition</td>
+                        <td>15.00</td>
+                        <td><input type="text"  id ="out2" value="0.00" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Zwischensumme</td>
+                        <td><input type="text" id ="out3" value="0.00" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">MwSt</td>
+                        <td><input type="text" id ="out4" value="0.00" readonly></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Summe</td>
+                        <td><input name = "Gesammt Preis" type="text" id ="out5" value="0.00" readonly></td>
+                    </tr>
+                </table>
+            </div>
+            <input type = "submit" value = "Submit">
+        </form>
+        <script src="Tabellenscript2.js"></script>
+    </body>
+</html>
+<!--throw new Error("ErrorBoy")-->
+<!--Preis soll direkt erscheinen
+Radion Button
+onKeyUp(pattern
+
+dann toFixed zum runden.)-->
